@@ -1,0 +1,36 @@
+[
+    {
+      "institution": "University of Athens",
+      "degree": "MSc in Computer Science",
+      "period": "Sept 2023 – Sept 2025",
+      "details": {
+        "concentration": "Data, Information, and Knowledge Management",
+        "grade": "9.30/10.0",
+        "coursework": [
+          "Interactive Systems",
+          "Advanced Programming Methods",
+          "Large-Scale Data Analysis Techniques",
+          "Data Visualization",
+          "Big Data Management",
+          "Machine Learning",
+          "Advanced Artificial Intelligence"
+        ],
+        "thesis": "Design and Development of a Virtual Reality and Web-Based Training System for Early Detection and Intervention in Psychosis"
+      }
+    },
+    {
+      "institution": "University of Athens",
+      "degree": "BSc in Computer Science",
+      "period": "Sept 2016 – Sept 2022",
+      "details": {
+        "concentration": "Computer Science & Information Technology",
+        "grade": "6.88/10.0",
+        "coursework": [
+          "Data Structures & Algorithms",
+          "Object Oriented Programming",
+          "Software Development"
+        ]
+      }
+    }
+  ]
+  

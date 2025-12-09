@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name · Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="container header-inner">
+        <div class="brand">ktheofilis.dev</div>
+      </div>
+    </header>
+
+    <!-- Hero / Landing -->
+    <section class="hero hero-wrap" id="top">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <p class="hero-label">Hello 👋</p>
+          <h1 class="hero-title">
+            I’m <span>Konstantinos</span><br />
+            Software Engineer
+          </h1>
+          <p class="hero-text">
+            I design and build XR applications and interactive systems using Unity and modern web technologies. I focus on creating meaningful tools for research, data visualization, training, and real-world decision support.
+          </p>
+          <a class="btn" href="Theofilis_CV_EN.pdf" target="_blank">Download Résumé</a>
+
+          <div class="social-row">
+            <a class="social-dot" href="https://github.com/kostantinostheo" target="_blank" aria-label="GitHub"><i class="fa">&#xf09b;</i></a>
+            <a class="social-dot" href="https://www.linkedin.com/in/kontheo/" target="_blank" aria-label="LinkedIn"><i class="fa">&#xf08c;</i></a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <a href="#experience" class="action-card">
+            <div class="action-icon"><i class="fa">&#xf0b1;</i></div>
+            <div class="action-label">Experience</div>
+            <div class="action-sub">Where I’ve worked.</div>
+          </a>
+
+          <a href="#education" class="action-card">
+            <div class="action-icon"><i class="fa">&#xf19c;</i></div>
+            <div class="action-label">Education</div>
+            <div class="action-sub">How I learned.</div>
+          </a>
+
+          <a href="#technologies" class="action-card">
+            <div class="action-icon">
+              <i class="fa">&#xf085;</i> <!-- gear icon -->
+            </div>
+            <div class="action-label">Tools & Technologies</div>
+            <div class="action-sub">Skills & stack overview.</div>
+          </a>
+          
+
+          <a href="#contact" class="action-card">
+            <div class="action-icon"><i class="fa">&#xf0e0;</i></div>
+            <div class="action-label">Contact me</div>
+            <div class="action-sub">Let’s work together.</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container section-inner">
+        <h2 class="section-title">Experience</h2>
+        <div id="experience-list" class="section-text"></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="container section-inner">
+        <h2 class="section-title">Education</h2>
+        <div id="education-list" class="section-text"></div>
+      </div>
+    </section>
+    
+
+    <!-- Projects -->
+    <!-- <section id="projects">
+      <div class="container section-inner">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-text">
+          <strong>Telemetry Dashboard</strong> — Real-time monitoring UI.<br>
+          <strong>Deployment Pipeline UI</strong> — Build & release tools.<br>
+          <strong>CLI Scaffold Tool</strong> — Generates app templates.
+        </p>
+      </div>
+    </section> -->
+
+    <!-- Technologies -->
+  <section id="technologies">
+    <div class="container section-inner">
+      <h2 class="section-title">Tools & Technologies</h2>
+      <p class="section-text">
+        <strong class="in-section-title">Tools & Engines</strong><br>
+        Unity, Virtual Reality (VR), Augmented Reality (AR), Node.js, React, HTML, CSS, Tailwind, Version Control (Git)
+        <br><br>
+
+        <strong class="in-section-title">Programming Languages</strong><br>
+        C#, JavaScript, TypeScript
+        <br><br>
+
+        <strong class="in-section-title">Databases</strong><br>
+        SQL, MongoDB
+        <br><br>
+
+        <strong class="in-section-title">Languages</strong><br>
+        English (Fluent, C2), Greek (Native)
+      </p>
+    </div>
+  </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container section-inner">
+        <h2 class="section-title">Contact me</h2>
+        <p class="section-text">
+          My email is available for download. Feel free to use it to contact me.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>&copy; <span id="year"></span> Konstantinos Theofilis</span>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="scripts/render.js"></script>
+
+</body>
+</html>
