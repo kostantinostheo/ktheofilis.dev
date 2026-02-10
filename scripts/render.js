@@ -20,28 +20,57 @@ async function loadJSON(path) {
       wrapper.className = "experience-item";
       wrapper.style.marginBottom = "1.8rem";
   
-      // Build responsibilities list (if any)
-      const responsibilities = Array.isArray(job.responsibilities)
-        ? job.responsibilities.map(item => `<li>${item}</li>`).join("")
-        : "";
+      let responsibilitiesHTML = "";
+      let externalUrl = null;
+  
+      if (Array.isArray(job.responsibilities)) {
+        responsibilitiesHTML = job.responsibilities
+          .map(item => {
+            if (item?.description) {
+              if (item?.url) {
+              return `
+                <a href="${item.url}" class="experience-external-link" target="_blank" rel="noopener noreferrer">
+                  <li>${item.description}</li>
+                </a>
+              `;
+            } else {
+              return `
+                <li class="experience-no-description">${item.description}</li>
+              `;
+            }
+          }})
+          .join("");
+
+      }
   
       wrapper.innerHTML = `
         <h3 class="experience-role">
           <span class="in-section-title">${job.role}</span>
           <span class="experience-company"> · ${job.company}</span>
         </h3>
+  
         <p class="experience-meta">
           ${job.location} — ${job.period}
         </p>
-        ${responsibilities
-          ? `<ul class="experience-list">${responsibilities}</ul>`
-          : ""
+  
+        ${
+          responsibilitiesHTML
+            ? `
+              <div class="experience-list-wrapper">
+                <ul class="experience-list">
+                  ${responsibilitiesHTML}
+                </ul>
+              </div>
+            `
+            : ""
         }
       `;
   
       container.appendChild(wrapper);
     });
   }
+  
+  
   
   function renderEducation(data) {
     const container = document.getElementById("education-list");
@@ -55,9 +84,14 @@ async function loadJSON(path) {
       wrapper.style.marginBottom = "1.8rem";
   
       // Format coursework list
-      const courseworkList = item.details.coursework
-        ? item.details.coursework.map(c => `<li>${c}</li>`).join("")
-        : "";
+      const courseworkList = item.details.coursework?.length
+      ? `
+        <ul class="coursework-tags">
+          ${item.details.coursework.map(c => `<li class="tag">${c}</li>`).join("")}
+        </ul>
+      `
+      : "";
+    
   
       wrapper.innerHTML = `
         <h3 class="education-degree">

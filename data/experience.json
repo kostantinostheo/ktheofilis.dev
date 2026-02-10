@@ -5,7 +5,10 @@
       "location": "Athens, Greece",
       "period": "Nov 2025 – Feb 2026",
       "responsibilities": [
-        "Produce technical reports for consulting projects, delivering clear analyses and actionable insights."
+        {
+          "description": "Produce technical reports for consulting projects, delivering clear analyses and actionable insights.",
+          "url": ""
+        }
       ]
     },
     {
@@ -14,10 +17,19 @@
       "location": "Athens, Greece",
       "period": "Feb 2024 – Present",
       "responsibilities": [
-        "Build XR (AR/VR/MR) applications in Unity (C#) for visualizing and interacting with EO data.",
-        "Create Mixed Reality simulations in Unity (C#) for operational scenarios, safety procedures, and emergency response.",
-        "Prepare project proposals for major funding programs (e.g., HORIZON), including technical concepts and implementation plans."
-      ]
+      {
+        "description": "Build XR (AR/VR/MR) applications in Unity (C#) for visualizing and interacting with EO data.",
+        "url": "https://drive.google.com/file/d/1lQTJoXszqgENfm_CkGD7Bw5XlhAaGBM-/view?usp=sharing"
+      },
+      {
+        "description": "Create Mixed Reality simulations in Unity (C#) for operational scenarios, safety procedures, and emergency response.",
+        "url": "https://drive.google.com/file/d/1K9slyt3MQM4VXjF3o0V11lnYsPjSY2_R/view?usp=sharing"
+      },
+      {
+        "description": "Prepare project proposals for major funding programs (e.g., HORIZON), including technical concepts and implementation plans.",
+        "url": ""
+      }
+  ]
     },
     {
       "role": "Associate Research Engineer",
@@ -25,8 +37,14 @@
       "location": "Athens, Greece",
       "period": "Jan 2023 – Feb 2024",
       "responsibilities": [
-        "Development of Digital Twin based applications in Unity (C#) for Crisis Management.",
-        "Development & deployment of in-laboratory web applications for efficient management and organization using React."
+        {
+          "description": "Development of Digital Twin based applications in Unity (C#) for Crisis Management.",
+          "url": ""
+        },
+        {
+          "description": "Development & deployment of in-laboratory web applications for efficient management and organization using React.",
+          "url": ""
+        }
       ]
     },
     {
@@ -34,11 +52,23 @@
       "company": "Wappier: Intelligent Revenue Management",
       "location": "Athens, Greece",
       "period": "Dec 2020 – Dec 2022",
-      "responsibilities": [
-        "Design and development of in-company Unity applications for QA testing.",
-        "Development of a Unity tool for automated packaging (.unitypackage) and exporting.",
-        "Implemented a Unity wrapper for the company’s SDK.",
-        "Design and development of an NFT marketplace in Unity (C#)."
+      "responsibilities":[
+        {
+          "description": "Design and development of in-company Unity applications for QA testing.",
+          "url": ""
+        },
+        {
+          "description": "Development of a Unity tool for automated packaging (.unitypackage) and exporting.",
+          "url": ""
+        },
+        {
+          "description": "Implemented a Unity wrapper for the company’s SDK.",
+          "url": ""
+        },
+        {
+          "description": "Design and development of an NFT marketplace in Unity (C#).",
+          "url": ""
+        }
       ]
     }
   ]

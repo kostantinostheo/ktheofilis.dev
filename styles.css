@@ -217,7 +217,7 @@
   }
   
   .section-inner {
-    max-width: 640px;
+    max-width: 740px;
   }
   
   .section-title {
@@ -240,13 +240,49 @@
     color: var(--muted);
     margin: 0.1rem 0 0.4rem;
   }
-  
+
+  .experience-list-wrapper {
+    display: block;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
   .experience-list {
     margin-left: 1.1rem;
     margin-top: 0.4rem;
     line-height: 1.6;
+    width: 100%;
   }
 
+  
+  .experience-list-line {
+    display: block;
+    gap: 0.5rem;
+  }
+
+  .experience-external-link {
+    margin-top: 0.25rem;
+    color:rgba(196, 188, 172, 0.745);
+    font-style: italic;
+  }
+  .experience-external-link:hover {
+    margin-top: 0.25rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  .experience-external-link i {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .experience-external-link:hover i {
+    opacity: 1;
+    color: var(--accent);
+    transform: translate(1px, -1px);
+  }
+  
   .education-meta {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.65);
@@ -258,6 +294,27 @@
     margin-left: 1.1rem;
     line-height: 1.6;
   }
+  .coursework-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    list-style: none;
+  }
+  
+  .coursework-tags .tag {
+    background-color: var(--panel);        /* light neutral */
+    color: var(--text);                   /* slate text */
+    padding: 0.35rem 0.65rem;
+    border-radius: 0.375rem;          /* subtle rounding */
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.2;
+    border: 1px solid var(--border);        /* soft border */
+    white-space: nowrap;
+  }
+  
 
 
 
